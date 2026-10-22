@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Note App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Note App</h1>
+            <button id="theme-toggle" type="button">Dark mode</button>
+        </header>
+
+        <form onsubmit="return false;">
+            <label for="note-text">Note</label>
+            <textarea id="note-text" placeholder="Write your note here..."></textarea>
+        </form>
+
+        <div class="counters">
+            <p id="char-count">0 / 200 characters</p>
+            <p id="word-count">0 words</p>
+        </div>
+
+        <div class="actions">
+            <button id="clear-btn" type="button">Clear</button>
+        </div>
+    </main>
+</body>
+</html>

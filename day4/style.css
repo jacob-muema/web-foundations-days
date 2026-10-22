@@ -1,0 +1,120 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #222222;
+    --card-bg: #ffffff;
+    --border-color: #cccccc;
+    --textarea-bg: #ffffff;
+    --btn-bg: #222222;
+    --btn-text: #ffffff;
+    --btn-hover-bg: #444444;
+}
+
+body.dark {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --card-bg: #2d2d2d;
+    --border-color: #555555;
+    --textarea-bg: #242424;
+    --btn-bg: #f0f0f0;
+    --btn-text: #222222;
+    --btn-hover-bg: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 24px;
+}
+
+main {
+    max-width: 600px;
+    margin: 32px auto;
+    padding: 24px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 140px;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--textarea-bg);
+    color: var(--text-color);
+    font: inherit;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: 2px solid var(--text-color);
+    outline-offset: -1px;
+}
+
+.counters {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 16px;
+    font-size: 14px;
+}
+
+.counters p {
+    margin: 0;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+.warning {
+    color: orange;
+}
+
+.over {
+    color: red;
+    font-weight: bold;
+}
